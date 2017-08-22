@@ -13,6 +13,10 @@ public class GlobalProperties
     private int threadPool;
     private String email;
 
+    @Override
+    public String toString() {
+        return "GlobalProperties {" + threadPool + ", " + email + "}";
+    }
     public int getThreadPool()
     {
         return threadPool;

@@ -4,6 +4,7 @@ import com.smart.springbootdemo.properties.AppProperties;
 import com.smart.springbootdemo.properties.GlobalProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +18,6 @@ import java.util.Map;
 @RestController
 public class WelcomeController
 {
-
     @Autowired
     private AppProperties app;
 

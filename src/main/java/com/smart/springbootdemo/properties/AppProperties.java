@@ -19,12 +19,75 @@ public class AppProperties
     private List<Menu> menus = new ArrayList<>();
     private Compiler compiler = new Compiler();
 
+    public String getError()
+    {
+        return error;
+    }
+
+    public void setError(String error)
+    {
+        this.error = error;
+    }
+
+    public List<Menu> getMenus()
+    {
+        return menus;
+    }
+
+    public void setMenus(List<Menu> menus)
+    {
+        this.menus = menus;
+    }
+
+    public Compiler getCompiler()
+    {
+        return compiler;
+    }
+
+    public void setCompiler(Compiler compiler)
+    {
+        this.compiler = compiler;
+    }
+
+    @Override
+    public String toString() {
+        return "app { " + error + ", " + menus + ", " + compiler + "}";
+    }
+
     public static class Menu {
         private String name;
         private String path;
         private String title;
 
-        //getters and setters
+        public String getName()
+        {
+            return name;
+        }
+
+        public void setName(String name)
+        {
+            this.name = name;
+        }
+
+        public String getPath()
+        {
+            return path;
+        }
+
+        public void setPath(String path)
+        {
+            this.path = path;
+        }
+
+        public String getTitle()
+        {
+            return title;
+        }
+
+        public void setTitle(String title)
+        {
+            this.title = title;
+        }
 
         @Override
         public String toString() {
@@ -41,7 +104,25 @@ public class AppProperties
         private String timeout;
         private String outputFolder;
 
-        //getters and setters
+        public String getTimeout()
+        {
+            return timeout;
+        }
+
+        public void setTimeout(String timeout)
+        {
+            this.timeout = timeout;
+        }
+
+        public String getOutputFolder()
+        {
+            return outputFolder;
+        }
+
+        public void setOutputFolder(String outputFolder)
+        {
+            this.outputFolder = outputFolder;
+        }
 
         @Override
         public String toString()
